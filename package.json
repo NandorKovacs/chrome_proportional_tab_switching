@@ -1,0 +1,26 @@
+{
+  "name": "chrome-relative-tab-keybinds",
+  "version": "1.0.0",
+  "description": "Chrome extension for proportional tab switching with keyboard shortcuts",
+  "main": "background.js",
+  "scripts": {
+    "build": "mkdir -p dist/icons && cp manifest.json background.js options.html options.js dist/ && cp icons/*.svg dist/icons/",
+    "dev": "npm run build && echo 'Load the dist directory as an unpacked extension in Chrome'",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "echo \"No tests specified yet\" && exit 0",
+    "package": "npm run build && VERSION=$(grep '\"version\"' manifest.json | cut -d '\"' -f4) && cd dist && zip -r ../chrome_proportional_tab_switching_v$VERSION.zip *"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "tabs",
+    "keyboard",
+    "shortcuts"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.38.0"
+  }
+}

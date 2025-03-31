@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Proportional Tab Switching",
+  "version": "1.0",
+  "description": "Switches to tabs proportionally when using Ctrl+Number keyboard shortcuts with many tabs open.",
+  "icons": {
+    "16": "icons/icon16.svg",
+    "32": "icons/icon32.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "switch-to-tab-1": {
+      "description": "Switch to tab 1 or proportionally"
+    },
+    "switch-to-tab-2": {
+      "description": "Switch to tab 2 or proportionally"
+    },
+    "switch-to-tab-3": {
+      "description": "Switch to tab 3 or proportionally"
+    },
+    "switch-to-tab-4": {
+      "description": "Switch to tab 4 or proportionally"
+    },
+    "switch-to-tab-5": {
+      "description": "Switch to tab 5 or proportionally"
+    },
+    "switch-to-tab-6": {
+      "description": "Switch to tab 6 or proportionally"
+    },
+    "switch-to-tab-7": {
+      "description": "Switch to tab 7 or proportionally"
+    },
+    "switch-to-tab-8": {
+      "description": "Switch to tab 8 or proportionally"
+    },
+    "switch-to-tab-9": {
+      "description": "Switch to tab 9 or proportionally"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  }
+}

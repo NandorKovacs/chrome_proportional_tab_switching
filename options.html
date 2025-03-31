@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chrome Proportional Tab Switching Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    input[type="number"] {
+      width: 60px;
+    }
+    .save-status {
+      color: green;
+      margin-top: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>Extension Options</h1>
+  
+  <div class="form-group">
+    <label for="tabThreshold">
+      Tab Threshold:
+      <input type="number" id="tabThreshold" min="1" max="100">
+    </label>
+    <p>When the number of tabs exceeds this threshold, the extension will use proportional tab switching.</p>
+  </div>
+  
+  <button id="save">Save</button>
+  <div id="status" class="save-status">Options saved!</div>
+  
+  <script src="options.js"></script>
+</body>
+</html>
