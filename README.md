@@ -23,21 +23,13 @@ For example, with 100 tabs:
   
 ## Configuration
 
+You have to set the desired keybinds yourself. Ctrl + N is recommended.
+
 You can customize the tab threshold for proportional switching:
 1. Right-click on the extension icon
 2. Select "Options"
 3. Set your preferred tab threshold
 4. Click "Save"
-
-## Installation
-
-1. Clone this repository
-2. Run `npm install` to install dependencies
-3. Run `npm run build` to build the extension
-4. In Chrome, go to `chrome://extensions/`
-5. Enable "Developer mode"
-6. Click "Load unpacked" and select the `dist` directory from this project
-7. Configure keyboard shortcuts by going to `chrome://extensions/shortcuts` and setting up your preferred keys for each command (you can use Ctrl+1 through Ctrl+9 for standard behavior)
 
 ## Development
 
@@ -47,15 +39,14 @@ You can customize the tab threshold for proportional switching:
 - `npm run lint:fix`: Fix code style issues automatically
 - `npm run package`: Build and package the extension as a ZIP file ready for the Chrome Web Store
 
-## Publishing
+### To debug the Extension
+2. Run `npm install` to install dependencies
+3. Run `npm run build` to build the extension
+4. In Chrome, go to `chrome://extensions/`
+5. Enable "Developer mode"
+6. Click "Load unpacked" and select the `dist` directory from this project
+7. Configure keyboard shortcuts by going to `chrome://extensions/shortcuts` and setting up your preferred keys for each command (you can use Ctrl+1 through Ctrl+9 for standard behavior)
 
-To publish to the Chrome Web Store:
-
-1. Run `npm run package` to create a versioned ZIP file (e.g., `chrome_proportional_tab_switching_v1.0.zip`)
-2. Go to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole/)
-3. Sign in with your Google account
-4. Click "New Item" and upload the ZIP file
-5. Fill in the required store listing details and submit for review
 
 ## License
 
