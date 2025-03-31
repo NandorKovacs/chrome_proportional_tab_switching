@@ -4,7 +4,7 @@
   "description": "Chrome extension for proportional tab switching with keyboard shortcuts",
   "main": "background.js",
   "scripts": {
-    "build": "mkdir -p dist/icons && cp manifest.json background.js options.html options.js dist/ && cp icons/*.svg dist/icons/",
+    "build": "mkdir -p dist/icons && cp manifest.json background.js options.html options.js dist/ && cp icons/* dist/icons/",
     "dev": "npm run build && echo 'Load the dist directory as an unpacked extension in Chrome'",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
