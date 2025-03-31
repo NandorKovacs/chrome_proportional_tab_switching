@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Chrome Proportional Tab Switching",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Switches to tabs proportionally when using Ctrl+Number keyboard shortcuts with many tabs open.",
   "icons": {
     "16": "icons/icon16.png",
