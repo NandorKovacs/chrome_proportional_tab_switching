@@ -68,9 +68,8 @@ chrome.commands.onCommand.addListener(async (command) => {
       // This creates equal jumps between tab positions
       targetIndex = Math.round((requestedTabNumber - 1) * step);
     }
+    // Activate the calculated tab
+    chrome.tabs.update(tabs[targetIndex].id, { active: true });
   });
-
-  // Activate the calculated tab
-  chrome.tabs.update(tabs[targetIndex].id, { active: true });
 });
 
